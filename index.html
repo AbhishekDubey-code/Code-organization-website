@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Feed</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Panel -->
+        <div class="left-panel">
+            <h2>Posts</h2>
+            <ul id="post-list">
+                <!-- Links to scroll to posts -->
+            </ul>
+            <button id="create-post-btn">Create Post</button>
+        </div>
+
+        <!-- Right Panel -->
+        <div class="right-panel" id="feed">
+            <!-- All posts will appear here -->
+        </div>
+    </div>
+
+    <!-- Modal for Creating a Post -->
+    <div id="create-post-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal" class="close">&times;</span>
+            <h2>Create New Post</h2>
+            <form id="create-post-form">
+                <label for="post-title-input">Title:</label>
+                <input type="text" id="post-title-input" required><br><br>
+
+                <label for="post-code-input">Code:</label>
+                <textarea id="post-code-input" rows="5" required></textarea><br><br>
+
+                <label for="post-description-input">Description:</label>
+                <textarea id="post-description-input" rows="3" required></textarea><br><br>
+
+                <label for="post-image-input">Image:</label>
+                <input type="file" id="post-image-input" accept="image/*"><br><br>
+
+                <button type="submit">Add Post</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
